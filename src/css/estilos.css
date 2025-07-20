@@ -7,6 +7,9 @@ body {
     background-color: var(--Violet);
     font-family: 'open sans';
 }
+.cabecalho {
+    display: flex;
+}
 
 .logo {
     margin: 40px;
@@ -66,3 +69,34 @@ body {
     justify-content: flex-end;
     max-width: 1300px;
 }
+
+@media (max-width:768px) {
+    .principal{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+
+    .image-principal {
+        max-width: 100%;
+    }
+    .principal {
+        text-align: center;
+        max-width: 500px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .favicons {
+        margin-bottom: 30px;
+    }
+    .cabecalho {
+        width: 439px;
+        text-align: start;
+      
+    }
+}
+
