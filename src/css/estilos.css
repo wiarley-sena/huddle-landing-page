@@ -1,0 +1,68 @@
+:root {
+    --Violet:hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+body {
+    background: url('../images/bg-desktop.svg');
+    background-color: var(--Violet);
+    font-family: 'open sans';
+}
+
+.logo {
+    margin: 40px;
+}
+.titulo {
+    font-family: 'Poppins';
+}
+
+.principal {
+    display: flex;
+    margin: 40px;
+}
+
+.info {
+    margin: 45px;
+    position: relative;
+}
+
+.titulo {
+    max-width: 420px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.texto {
+    font-weight: 400;
+    font-size: 17px;
+    max-width: 490px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.botao {
+    padding: 15px 60px;
+    border-radius: 50px;
+    margin: 0 10px;
+    font-size: 18px;
+    font-family: 'open sans';
+    color: var(--Violet);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+.favicons  a {
+    color: #fff;
+    border-radius: 50px;
+    border: 1px solid #fff;
+    text-align: center;
+    margin: 5px;
+}
+
+.favicons a, i {
+    padding: 5px 5px;
+    text-align: center;
+}
+.rodape{
+    display: flex;
+    justify-content: flex-end;
+    max-width: 1300px;
+}
