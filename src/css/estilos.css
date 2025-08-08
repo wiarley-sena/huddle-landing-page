@@ -3,16 +3,22 @@
     --Soft-Magenta: hsl(300, 69%, 71%);
 }
 body {
-    background: url('../images/bg-desktop.svg');
+    background: url('../images/bg-desktop.svg')no-repeat ;
     background-color: var(--Violet);
     font-family: 'open sans';
+    height: 100vh;
 }
-.cabecalho {
+.container{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .logo {
     margin: 40px;
+    margin-right: 1100px;
 }
 .titulo {
     font-family: 'Poppins';
@@ -51,6 +57,10 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+.botao:hover{
+    background-color: var(--Soft-Magenta);
+    color: #fff;
+}
 
 .favicons  a {
     color: #fff;
@@ -60,43 +70,20 @@ body {
     margin: 5px;
 }
 
-.favicons a, i {
-    padding: 5px 5px;
+a:hover{
+    background-color: var(--Soft-Magenta);
+    color: var(--Violet);
+    border-color: var(--Violet);
+}
+
+.favicons a, i{
     text-align: center;
-}
-.rodape{
+    padding: 5px 5px;
+} 
+.rodape ul {
     display: flex;
-    justify-content: flex-end;
-    max-width: 1300px;
+    justify-content: end;
+    margin-left: 1500px;
 }
 
-@media (max-width:768px) {
-    .principal{
-        display: flex;
-        flex-direction: column;
-        margin: 20px;
-    }
-
-    .image-principal {
-        max-width: 100%;
-    }
-    .principal {
-        text-align: center;
-        max-width: 500px;
-    }
-    .container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .favicons {
-        margin-bottom: 30px;
-    }
-    .cabecalho {
-        width: 439px;
-        text-align: start;
-      
-    }
-}
 
